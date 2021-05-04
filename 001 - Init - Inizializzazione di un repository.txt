@@ -1,0 +1,28 @@
+#Inizializzazione di un nuovo repository
+
+git status
+dovrebbe darmi un errore, e dirmi che non mi trovo in nessun repository
+fatal: not a git repository (or any of the parent directories): .git
+
+La prima cosa che devo fare, è quindi inizializzare un repository.
+git init
+
+Ovviamente, mi basterà lanciarlo una sola volta per repository. (una sola volta per progetto)
+
+A questo punto, se provo nuovamente a dare *git status* mi verranno ritornate le informazioni di cui ho bisogno per capire "Dove mi trovo".
+
+C:\Users\chris\Documents\Corso Git> git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Dummy Documentation.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Una cosa importante, è che una volta inizializzato un repository all'interno di una cartella, anche le sue sottocartelle apparterranno a quello stesso repository, quindi, per quanto ovvio possa sembrare:
+
+NON CREARE MAI UN REPOSITORY ALL'INTERNO DI UN REPOSITORY
+(Ed usare, solitamente, un repository per progetto)
