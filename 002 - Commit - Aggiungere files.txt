@@ -81,3 +81,8 @@ Oppure posso scrivere:
 git commit
 
 Ma così, mi apre l'editor di testo che ho configurato come default, per farmi inserire il messaggio.
+
+Con il comando:
+git add .
+
+posso dire a git di aggiungere TUTTI i file, senza doverne selezionare uno alla volta
