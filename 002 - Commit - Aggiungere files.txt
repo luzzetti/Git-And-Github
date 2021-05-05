@@ -81,4 +81,3 @@ Oppure posso scrivere:
 git commit
 
 Ma così, mi apre l'editor di testo che ho configurato come default, per farmi inserire il messaggio.
-
