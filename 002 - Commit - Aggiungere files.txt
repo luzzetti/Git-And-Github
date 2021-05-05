@@ -86,3 +86,4 @@ Con il comando:
 git add .
 
 posso dire a git di aggiungere TUTTI i file, senza doverne selezionare uno alla volta
+
