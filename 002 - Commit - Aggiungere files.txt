@@ -1,0 +1,84 @@
+# 2 - Aggiungere files ad un repository
+
+Cos'è una commit?
+Dobbiamo immaginarlo come un Checkpoint nei classichi videogiochi.
+
+Ogni volta che credo di aver completato una parte importante (o meno) di progetto, oppure ogni volta che mi dico: "Ok, mi trovo ad un punto in cui funziona piu o meno tutto. Voglio creare un checkpoint qui, e qualunque cazzata faccia da qui in poi, potrò sempre tornare tranquillamente indietro a questo (O qualunque altro) checkpoint.
+
+Inoltre, cosa molto importante, posso aggiungere un breve messaggio ad ognuna di questi checkpoint, o, per usare la terminologia corretta, ad ognuna di queste commit.
+
+Diventando un po' tecnici, i comandi di cui abbiamo bisogno in questa sezione, sono
+
+git add
+e 
+git commit
+
+Working Directory
+-> Git add
+Staging Area
+-> Git commit
+repository
+
+Con git add, possiamo "Raggruppare" o "Scegliere" alcuni dei file modificati, che vogliamo inserire nella prossima commit.
+
+In alcuni casi, infatti, vorremmo poter committare solo ALCUNI dei file su cui abbiamo lavorato.
+O, se anche vogliamo committarli tutti, vorremmo poter dividere le varie commit a seconda delle aree tematiche.
+
+Magari ho modificato 10 file, di cui 3 appartengono alla GUI, e gli altri 7 alla gestione del backend.
+Invece di fare una singola commit, chiamata: "Modifiche al frontend e backend", posso suddividerla.
+
+Posso effettuare il git add dei primi tre file, e creare una commit "Aggiunte pagine belle al frontend"
+
+Poi, effettuare nuovamente il git add degli altri 7 file rimanenti, (Che in questo momento finiscono nella staging area, ossia una zona di 'preparazione' alla commit), e committarli con un messaggio più significatico, come: "Creazione delle servlet per il ricevimento dei dati x".
+
+Così come quando scriviamo il codice, vogliamo mantenere quanto più ordine e coerenza possibile, e fare delle piccole commit coesive tra di loro, è un buon modo per non imputtanare le varie commit.
+
+Ad esempio, in questa stessa sessione, ho creato sia il file 001, sia il file 002.
+Ad ogni modo, sono due cose diverse, sono due capitoli differenti che hanno poca relazione tra loro, quindi, invece di creare un'unica commit "Roba varia", o il ben più tipico "Commit iniziale",
+aggiungerò prima il primo file alla staging area, committandolo con il commento "Commit del file relativo all'inizializzazione del repo", e subito dopo, farò la stessa cosa per il secondo file.
+
+
+git status
+
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        001 - Init - Inizializzazione di un repository.txt
+        002 - Commit - Aggiungere files
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Git mi fa notare che ci sono due file ancora untracked.
+
+La prima cosa che voglio fare, è "preparare" i file che voglio committare con il Git Add
+git add '.\001 - Init - Inizializzazione di un repository.txt'
+
+git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   001 - Init - Inizializzazione di un repository.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        002 - Commit - Aggiungere files
+
+
+Adesso posso proseguire, e committare effettivamente i miei file.
+Ora, posso scrivere:
+
+git commit -m "Messaggio relativo alla commit"
+
+e ok.
+
+Oppure posso scrivere:
+git commit
+
+Ma così, mi apre l'editor di testo che ho configurato come default, per farmi inserire il messaggio.
+
