@@ -12,3 +12,4 @@ Date:   Wed May 5 22:48:59 2021 +0200
 per ogni commit, posso vedere svariate impostazioni, tra cui il messaggio di commit, il nome dell'autore della commit, la data, ed un hash.
 L'hash è importante, ma vedremo più in la il motivo.
 
+    
