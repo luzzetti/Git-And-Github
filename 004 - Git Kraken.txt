@@ -1,0 +1,5 @@
+# Git kraken
+
+Non c'è molto da dire.
+è una Gui carina (E con Dark Theme), per gestire i repository.
+Si allaccia anche a GitHub e affini, ma per ora non vedo molti motivi per utilizzarla.
