@@ -12,3 +12,6 @@ Dentro al file, possiamo scrivere, su ogni riga, cosa vogliamo ignorare, ad esem
 nomeCartella/
 *.log
 
+Comodo sito per la creazione dei gitignore gia pronti:
+
+https://www.toptal.com/developers/gitignore
