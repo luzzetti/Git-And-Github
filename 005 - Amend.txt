@@ -1,0 +1,6 @@
+# Amend
+
+Mettiamo per esempio che venga commitato qualcosa per errore, ad esempio, la riga qua sotto:
+
+-------------------------------------
+
