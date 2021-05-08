@@ -1,0 +1,8 @@
+git branch
+
+non fa niente, si limita ad elencare la lista dei branch esistenti.
+
+PS C:\Users\chris\Documents\Corso Git> git branch
+* master
+
+
