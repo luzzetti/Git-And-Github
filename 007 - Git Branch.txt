@@ -23,3 +23,14 @@ L'asterisco mi indica il branch in cui mi trovo.
 per switchare ad un altro branch, possiamo scrivere
 git switch <nomeDelBranch>
 
+se mi sposto sul branch, e committo qualcosa, dai log vedrò che:
+
+PS C:\Users\chris\Documents\Corso Git> git log --oneline
+d0f968f (HEAD -> bugfix2) altro branch
+8e2ca3a (master) aggiunte info alla sezione sul branching
+3f81b3f aggiunto capitolo sul branch
+
+il master è rimasto indietro di una commit.
+
+Ovviamente, se torno sul master, le modifiche verranno "magicamente" rimosse, e tornerò al checkpoint master.
+
