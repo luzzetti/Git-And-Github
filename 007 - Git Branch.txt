@@ -6,3 +6,20 @@ PS C:\Users\chris\Documents\Corso Git> git branch
 * master
 
 
+se scrivo:
+git branch <nomeDelBranch>
+creerò un nuovo branch, basato sull'HEAD corrente, ossia sulla commit in cui sta putando l'HEAD
+
+git branch bugfix
+La console non mi logga niente, e NON MI SPOSTA in automatico sul nuovo branch.
+Si limita a crearne uno, che posso vedere con il comando git branch
+
+PS C:\Users\chris\Documents\Corso Git> git branch
+  bugfix
+* master
+
+L'asterisco mi indica il branch in cui mi trovo.
+
+per switchare ad un altro branch, possiamo scrivere
+git switch <nomeDelBranch>
+
