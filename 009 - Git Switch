@@ -1,0 +1,12 @@
+git switch <branchName>
+ come ormai sappiamo, ci sposta su un altro branch.
+
+ git switch bugfix
+Switched to branch 'bugfix'
+
+Ma possiamo anche creare e switchare su un nuovo branch, tutto on un solo comando:
+
+git switch -c <branchName>
+
+la -c sta per --create
+
