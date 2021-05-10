@@ -5,3 +5,5 @@ Mettiamo per esempio che venga commitato qualcosa per errore, ad esempio, la rig
 -------------------------------------
 
 Parte aggiunta con git Amend
+
+git commit --amend -m "aggiunto paragrafo sul git checkout"
