@@ -10,3 +10,8 @@ git switch -c <branchName>
 
 la -c sta per --create
 
+ATTENZIONE:
+sono su un branch, ed ho delle modifiche NON ANCORA COMMITTATE.
+Se provo a switchare su un altro branch, NON MI PERMETTE DI SWITCHARE normalmente.
+
+
