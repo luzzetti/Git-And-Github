@@ -87,3 +87,7 @@ git add .
 
 posso dire a git di aggiungere TUTTI i file, senza doverne selezionare uno alla volta
 
+
+un modo breve, per effettuare ADD e COMMIT tutto in una sola volta è:
+
+git commit -a -m "Messaggio di commit"
