@@ -55,3 +55,19 @@ git branch -D
 
 git branch -D bugfix
 Deleted branch bugfix (was 8ef3800).
+
+
+# RINOMINARE #
+Infine, se voglio rinominare un branch, posso usare
+git branch -m 
+in questo caso, al contrario della delete, devo SPOSTARMI SOPRA AL BRANCH che voglio rinominare.
+
+PS C:\Users\chris\Documents\Corso Git> git branch -m branchRinominato
+PS C:\Users\chris\Documents\Corso Git> git branch
+* branchRinominato
+  bugfix2
+  master
+
+  la -m sta per Move/Rename
+
+  
