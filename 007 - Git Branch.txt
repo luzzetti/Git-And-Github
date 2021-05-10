@@ -34,3 +34,24 @@ il master è rimasto indietro di una commit.
 
 Ovviamente, se torno sul master, le modifiche verranno "magicamente" rimosse, e tornerò al checkpoint master.
 
+
+# ELIMINARE O RINOMINARE UN BRANCH #
+A volte (Solitamente dopo aver mergiato un branch), può capitare di doverlo eliminare, perché non si vuole più averlo li, fluttuante, senza un motivo.
+
+in questo caso, possiamo usare il comando:
+git branch -d <nomeDelBranchDaCancellare>
+
+Ovviamente, NON POSSO STARE sopra al branch da cancellare.
+
+PS C:\Users\chris\Documents\Corso Git> git branch -d bugfix
+error: The branch 'bugfix' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D bugfix'.
+
+Uuuh, git ci sta notificando che le modifiche di quel branch, non sono state correttamente mergiate con il branch in cui mi trovo.
+
+Se sono sicuro di voler eliminare comunque quel branch, e tutte le modifiche che contiene, SENZA PIU POSSIBILITA DI RIPRENDERLE, posso usare la -D maiuscola.
+
+git branch -D 
+
+git branch -D bugfix
+Deleted branch bugfix (was 8ef3800).
