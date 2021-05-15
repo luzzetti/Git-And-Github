@@ -8,7 +8,38 @@ Ci sono vari tipi di merge:
 
 (Questo branch sta piu avanti del master, e voglio mergiare QUESTO branch, con il master, ossia portare la le mie modifiche)
 
+==================== FAST-FORWARD MERGE ================================================
+
 1- per prima cosa, devo SPOSTARMI SUL BRANCH RICEVENTE
 git switch master
+2- dare il comando di merge, con il nome del branch DA CUI PRENDERE LE MODIFICHE
+git merge <nomeDelBranch>
 
-uuuh, oooh, qquesto è chiaramente un merge conflict!!!
+A - A 
+      \
+        B - B
+
+
+A - A - A - A 
+
+Questo è un classico FAST-FORWARD merge.
+Git si limita ad aggiungere le commit del branch all'ultima del master, e spostare l'HEAD su quella
+
+
+==================== MERGE CONFLICTS COMMIT ================================================
+
+Ora proviamo invece una merge con qualche conflict...
+
+A - A - A 
+      \
+        B - B
+
+Merge con qualche conflict
+
+In questo caso, GIT non può semplicemente accodare le due commit, e deve creare un nuovo pallocco, chiamato "MERGE COMMIT"
+
+A - A -   A   - MC
+       \     /
+        B - B 
+
+La "Merge commit", è quindi una commit contenente il codice mergiato.
