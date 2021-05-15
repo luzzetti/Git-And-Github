@@ -26,3 +26,10 @@ Questo è un classico FAST-FORWARD merge.
 
 ====================================================================
 
+Ora proviamo invece una merge con qualche conflict...
+
+A - A - A 
+      \
+        B - B
+
+Merge con qualche conflict
