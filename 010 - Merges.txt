@@ -1,0 +1,6 @@
+# Merge
+Ci sono vari tipi di merge:
+-   Fast Forward Merges
+-   Git Merge & Merge Commits
+-   ...
+
