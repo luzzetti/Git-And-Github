@@ -11,3 +11,18 @@ Ci sono vari tipi di merge:
 
 1- per prima cosa, devo SPOSTARMI SUL BRANCH RICEVENTE
 git switch master
+
+2- dare il comando di merge, con il nome del branch DA CUI PRENDERE LE MODIFICHE
+git merge <nomeDelBranch>
+
+A - A 
+      \
+        B - B
+
+
+A - A - A - A 
+
+Questo è un classico FAST-FORWARD merge.
+
+====================================================================
+
