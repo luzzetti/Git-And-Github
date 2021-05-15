@@ -30,7 +30,7 @@ Git si limita ad aggiungere le commit del branch all'ultima del master, e sposta
 
 Ora proviamo invece una merge con qualche conflict...
 
-A - A - A 
+A - A - A - A
       \
         B - B
 
@@ -38,7 +38,7 @@ Merge con qualche conflict
 
 In questo caso, GIT non può semplicemente accodare le due commit, e deve creare un nuovo pallocco, chiamato "MERGE COMMIT"
 
-A - A -   A   - MC
+A - A - A - A - MC
        \     /
         B - B 
 
