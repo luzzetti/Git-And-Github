@@ -2,7 +2,6 @@
 Ci sono vari tipi di merge:
 -   Fast Forward Merges
 -   Git Merge & Merge Commits
--   ...
 
 1- We merge branches, not specific Commits
 2- We always merge, based on the current HEAD branch. 
@@ -11,3 +10,5 @@ Ci sono vari tipi di merge:
 
 1- per prima cosa, devo SPOSTARMI SUL BRANCH RICEVENTE
 git switch master
+
+uuuh, oooh, qquesto è chiaramente un merge conflict!!!
