@@ -4,3 +4,10 @@ Ci sono vari tipi di merge:
 -   Git Merge & Merge Commits
 -   ...
 
+1- We merge branches, not specific Commits
+2- We always merge, based on the current HEAD branch. 
+
+(Questo branch sta piu avanti del master, e voglio mergiare QUESTO branch, con il master, ossia portare la le mie modifiche)
+
+1- per prima cosa, devo SPOSTARMI SUL BRANCH RICEVENTE
+git switch master
