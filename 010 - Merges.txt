@@ -23,6 +23,7 @@ A - A
 A - A - A - A 
 
 Questo è un classico FAST-FORWARD merge.
+Git si limita ad aggiungere le commit del branch all'ultima del master, e spostare l'HEAD su quella
 
 ====================================================================
 
@@ -33,3 +34,11 @@ A - A - A
         B - B
 
 Merge con qualche conflict
+
+In questo caso, GIT non può semplicemente accodare le due commit, e deve creare un nuovo pallocco, chiamato "MERGE COMMIT"
+
+A - A -   A   - MC
+       \     /
+        B - B 
+
+La "Merge commit", è quindi una commit contenente il codice mergiato.
