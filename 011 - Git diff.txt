@@ -1,0 +1,8 @@
+GIt diff serve, fondamentalmente, a mostrarci le differenze tra due...file? presumo?
+mo vediamo.
+
+
+Intanto, il comando più basilare, è quello proprio secco:
+git diff
+
+ed in teoria ci mostra le differenze tra la staging area, e la nostra working directory.
