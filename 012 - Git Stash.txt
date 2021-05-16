@@ -45,3 +45,21 @@ git stash pop stash@{2}
 e così, ad esempio, riapplicherò la modifica messa nello stash con indice 2, che posso vedere dalla lista di stash.
 
 Non mi servirà mai, spero, ma è buono saperlo.
+
+# DELETE #
+Ok, mettiamo che ho roba nello stash, e decido di toglierla senza popparla.
+(O se uso apply, ma poi mi rendo conto di dover togliere roba dallo stash)
+
+posso usare il comando:
+
+$ git stash list
+stash@{0}: WIP on master: a1717d8 lavorare con stash multiple
+
+per vedere quali stash ho nella lista.
+Dopodiché posso eliminare un preciso stash, chiamando:
+
+git stash drop stash@{0}
+
+oppure
+git stash clear
+se voglio pulirli tutti
