@@ -21,3 +21,13 @@ Questo, è il caso in cui GIT STASH mi viene in soccorso.
 Il comando git stash, prende tutte le modifiche NON COMMITTATE (Staged e non), le nasconde da qualche parte, e fa il revert della working copy. (Dopo, potremo riprendere le modifiche).
 
 Più tardi, potremo fare GIT STASH POP per rimuovere le modifiche dallo stash, e rimetterle nella working copy.
+
+Alcuni comandi secondari, possono essere, ad esempio:
+git stash apply
+
+fa la stessa cosa del git stash pop, PERO'...non elimina il codice dallo stash.
+Quindi, se per esempio voglio stashare un pezzo di codice, ed applicarlo su branch multipli, posso fare:
+git stash apply
+poi spostarmi su qualche altro branch con git switch <nomeDelbranch>
+e dare nuovamente git stash apply, oppure git stash pop.
+
