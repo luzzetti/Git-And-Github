@@ -1,0 +1,26 @@
+# GIT STASH
+
+Mettiamo che mi trovo su un branch, ed ho un file (o un fottio), che ho modificato, ma che non ho committato.
+Ora, per qualche motivo (Rapidissimo bugfix? Fare un pacchetto?) devo spostarmi al volo sul trunk.
+
+Che succede se mi ci sposto senza aver prima committato i file modificati?
+
+1. Quei cambi mi seguono sul branch di destinazione. (Ahia...)
+2. Git non mi fa switchare se nota dei conflitti. (Ahi...)
+
+e quindi?
+E QUINDI?
+Non ho finito sul branch, e non voglio committare perché sarebbe una commit del cazzo.
+
+
+Ok, tipo, ora mi trovo sul branch, e questa modifica non è ancora stata committata.
+Non è nemmeno completata, quindi non mi sentirei bene con me stesso nel committarla.
+Però, mi dicono che devo andare al volo sul trunk per creare un pacchetto...
+
+se switcho al master, MI PORTO DIETRO QUESTE MODIFICHE, e questo non è bello.
+
+Questo, è il caso in cui GIT STASH mi viene in soccorso.
+
+Il comando git stash, prende tutte le modifiche NON COMMITTATE (Staged e non), le nasconde da qualche parte, e fa il revert della working copy. (Dopo, potremo riprendere le modifiche).
+
+Più tardi, potremo fare GIT STASH POP per rimuovere le modifiche dallo stash, e rimetterle nella working copy.
