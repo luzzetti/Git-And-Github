@@ -31,3 +31,17 @@ git stash apply
 poi spostarmi su qualche altro branch con git switch <nomeDelbranch>
 e dare nuovamente git stash apply, oppure git stash pop.
 
+
+# STASH MULTIPLE #
+Un'altra cosa che può capitare, è che io faccia delle stash multiple. No bueno.
+per vedere una lista di robe che ho nello stash, posso usare
+git stash list
+
+ovviamente se eseguo git stash pop, mi da l'ultima, perché, beh, è uno stack.
+
+posso però eseguire:
+git stash pop stash@{2}
+
+e così, ad esempio, riapplicherò la modifica messa nello stash con indice 2, che posso vedere dalla lista di stash.
+
+Non mi servirà mai, spero, ma è buono saperlo.
