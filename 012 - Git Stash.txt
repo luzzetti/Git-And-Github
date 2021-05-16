@@ -1,0 +1,14 @@
+# GIT STASH
+
+Mettiamo che mi trovo su un branch, ed ho un file (o un fottio), che ho modificato, ma che non ho committato.
+Ora, per qualche motivo (Rapidissimo bugfix? Fare un pacchetto?) devo spostarmi al volo sul trunk.
+
+Che succede se mi ci sposto senza aver prima committato i file modificati?
+
+1. Quei cambi mi seguono sul branch di destinazione. (Ahia...)
+2. Git non mi fa switchare se nota dei conflitti. (Ahi...)
+
+e quindi?
+E QUINDI?
+Non ho finito sul branch, e non voglio committare perché sarebbe una commit del cazzo.
+

@@ -5,3 +5,9 @@ git diff
 
 ed in teoria ci mostra le differenze tra la staging area, e la nostra working directory.
 Ossia tutte le modifiche che abbiamo fatto, ma che non abbiamo ancora messo in fase di stage.
+
+se vogliamo confrontare il nostro file, con l'ultima commit, possiamo dare:
+git diff HEAD
+
+All'atto pratico, molto probabilmente, useremo sempre qualche tool per vedere sta roba, quindi...niente.
+è comunque buono saperlo.
