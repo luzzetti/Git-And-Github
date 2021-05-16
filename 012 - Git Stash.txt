@@ -12,3 +12,4 @@ e quindi?
 E QUINDI?
 Non ho finito sul branch, e non voglio committare perché sarebbe una commit del cazzo.
 
+pfff...testo che verrà eliminato poi dalla merge commit. serve solo a generare un conflitto per esercizio
