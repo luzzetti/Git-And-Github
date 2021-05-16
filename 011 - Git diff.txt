@@ -1,8 +1,7 @@
-GIt diff serve, fondamentalmente, a mostrarci le differenze tra due...file? presumo?
-mo vediamo.
-
+Git diff serve, fondamentalmente, a mostrarci le differenze tra due...cose?
 
 Intanto, il comando più basilare, è quello proprio secco:
 git diff
 
 ed in teoria ci mostra le differenze tra la staging area, e la nostra working directory.
+Ossia tutte le modifiche che abbiamo fatto, ma che non abbiamo ancora messo in fase di stage.

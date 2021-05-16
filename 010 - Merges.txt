@@ -43,3 +43,4 @@ A - A - A - A - MC
         B - B 
 
 La "Merge commit", è quindi una commit contenente il codice mergiato.
+
