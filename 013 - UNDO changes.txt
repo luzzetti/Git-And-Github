@@ -41,3 +41,7 @@ Ma posso fare molto di più!
 Posso tornare indietro, e creare un nuovo branch a partire da quel preciso punto nel tempo!
 
 git checkout <hashVecchiaCommit>
+git switch -c nuovoBranch
+Ok, ho creato un nuovo branch, e ci ho committato roba sopra.
+poi con switch master, sono ritornato quì.
+Ma quel branch esiste...
