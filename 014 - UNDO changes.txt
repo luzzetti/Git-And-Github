@@ -14,3 +14,5 @@ git restore <nomeDelFile>
 
 che è un nuovo comando fatto apposta per questo.
 git restore --source HEAD~2 <nomeFile>
+
+ERROREEEEEEE DA ELIMINAREEEEE
