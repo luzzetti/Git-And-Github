@@ -31,5 +31,3 @@ Abbastanza brutale, anche nella versione soft.
 git revert fa qualcosa di veramente più soft.
 Reverte i cambiamenti effettuati fino ad una certa commit. Posso poi fare una nuova modifica con l'eliminazione di quelle modifiche. 
 Ma non vado effettivamente indietro. Vado avanti.
-
-ERRORE
