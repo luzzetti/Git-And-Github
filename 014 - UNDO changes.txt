@@ -14,3 +14,6 @@ git restore <nomeDelFile>
 
 che è un nuovo comando fatto apposta per questo.
 git restore --source HEAD~2 <nomeFile>
+
+Inoltre, posso rimuovere dalla staging area, dei file, prima di committarli.
+git restore --staged <nomeFile>
