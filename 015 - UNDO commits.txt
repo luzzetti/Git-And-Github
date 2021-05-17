@@ -9,7 +9,6 @@ Ci sono due modi:
 - Reset
 - Hard Reset
 
-# SOFT RESET #
 git reset <hashDellaCommitDoveVoglioAndare>
 
 Ora, potrei essere portato a pensare che le modifiche scompaiano magicamente dalla working copy, E INVECE NO!
@@ -31,5 +30,3 @@ Abbastanza brutale, anche nella versione soft.
 git revert fa qualcosa di veramente più soft.
 Reverte i cambiamenti effettuati fino ad una certa commit. Posso poi fare una nuova modifica con l'eliminazione di quelle modifiche. 
 Ma non vado effettivamente indietro. Vado avanti.
-
-ERRORE
