@@ -1,3 +1,13 @@
 # UNDO COMMITS #
 
 Ok, FORSE...forse ci siamo.
+Mettiamo che ho fatto delle commit, e mi rendo conto di aver fatto una cazzata. (Magari ho committato un bug grosso, o ho committato sul branch sbagliato)
+Come torno indietro?
+Come "annullo" la commit?
+
+Ci sono due modi:
+- Reset
+- Hard Reset
+
+
+
