@@ -45,3 +45,15 @@ git switch -c nuovoBranch
 Ok, ho creato un nuovo branch, e ci ho committato roba sopra.
 poi con switch master, sono ritornato quì.
 Ma quel branch esiste...
+
+------------------------------------------------
+
+Ok, un'altra roba abbastanza inutile, è tornare indietro di X commits, relativamente alla HEAD.
+Semplice, facile, non vedo l'utilità ma ok.
+
+git checkout HEAD~1
+Torno indietro di una commit.
+git checkout HEAD~4
+torno indietro di 4 commit.
+
+E così via.
