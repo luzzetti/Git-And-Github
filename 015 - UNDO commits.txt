@@ -9,5 +9,10 @@ Ci sono due modi:
 - Reset
 - Hard Reset
 
+git reset <hashDellaCommitDoveVoglioAndare>
 
+Ora, potrei essere portato a pensare che le modifiche scompaiano magicamente dalla working copy, E INVECE NO!
+Però non risultano più committate.
+
+Praticamente le commit vengono "tolte" dalla storia delle commit, e spostate nuovamente nella working area.
 
