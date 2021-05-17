@@ -1,0 +1,2 @@
+Ok, un altro modo di fare (stavolta spero veramente) un revert ad una commit del passato.
+
