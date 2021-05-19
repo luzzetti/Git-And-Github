@@ -7,5 +7,9 @@ Il <branch> invece, è il nome del branch LOCALE che vogliamo pushare in remoto.
 
 git push origin master
 
+posso anche creare un branch, e pushare quello, ad esempio:
+git switch -c emptyBranch
 
+git push origin emptyBranch
 
+ora su gitHub mi troverà entrambi i branch.
