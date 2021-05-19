@@ -13,3 +13,34 @@ git switch -c emptyBranch
 git push origin emptyBranch
 
 ora su gitHub mi troverà entrambi i branch.
+
+
+
+git push origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 570 bytes | 570.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/luzzetti/Git-And-Github.git
+   a828425..734e006  master -> master
+
+Una cosa importante, è notare il puntamento:
+   a828425..734e006  master -> master
+
+   vuol dire che abbiamo pushato il nostro MASTER branch locale, con il MASTER branch di GitHub.
+   Facciamo attenzione, perché non è sempre e necessariamente così.
+
+Io potrei trovarmi su un branch differente, e volerlo caricare sul master branch di github. (O viceversa);
+
+ad esempio, potrei scrivere:
+
+git push <remoteName> <localBranch>:<remoteBranch>
+
+e così, prenderei un branch specifico puntato in locale, e lo pusherei su un altro branch remoto.
+ad esempio:
+git push origin emptyBranch:master
+
+Non sò quando una cosa del genere potrebbe tornarmi utile, ma tant'è.
