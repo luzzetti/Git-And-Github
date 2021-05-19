@@ -43,4 +43,26 @@ e così, prenderei un branch specifico puntato in locale, e lo pusherei su un al
 ad esempio:
 git push origin emptyBranch:master
 
-Non sò quando una cosa del genere potrebbe tornarmi utile, ma tant'è.
+Non sò quando una cosa del genere potrebbe tornarmi utile, ma tant'è.   
+
+Un ultima cosa, è il fatto di poter scrivere direttamente la scorciatoia:
+git push
+
+git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+Uops!
+Posso farlo SOLO se ho impostato un upstream (un puntamento di default) su un determinato branch.
+
+Ad esempio, se voglio che il mio branch locale Master, punti sempre al branch remoto Master, posso spostarmi sul mio branch locale Master, ed impostare l'upstream con:
+
+git push --set-upstream origin master
+Everything up-to-date
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Ora posso usare il comando abbreviato dal master.
+git push
