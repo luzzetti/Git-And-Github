@@ -61,6 +61,8 @@ Posso farlo SOLO se ho impostato un upstream (un puntamento di default) su un de
 Ad esempio, se voglio che il mio branch locale Master, punti sempre al branch remoto Master, posso spostarmi sul mio branch locale Master, ed impostare l'upstream con:
 
 git push --set-upstream origin master
+oppure con
+git push -u origin master
 Everything up-to-date
 Branch 'master' set up to track remote branch 'master' from 'origin'.
 
