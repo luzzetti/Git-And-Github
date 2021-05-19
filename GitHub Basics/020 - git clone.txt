@@ -1,0 +1,21 @@
+Contesto:
+Con "git init"; inizializziamo un nuovo repository locale. E fin quì, siamo tutti d'accordo.
+
+In realtà, esiste un altro comando altrettanto importante:
+git clone <url>
+
+Il comando va a prendere un repository remoto, da qualche parte, e lo porta in locale.
+(Nel 90% dei casi, sarà da GitHub, ma in realtà non è l'unico. Il repository può essere ovunque)
+
+è importante notare che il comando "git clone" fa parte di GIT, non di GitHub.
+
+Quindi, git, permette di andare a prendere un repository remoto, e portarlo in locale, assieme a tutta la storia delle commit effettuata.
+
+esempio:
+
+git clone https://urlDelRepository/blah.git
+
+
+Ora, una cosa importante (e noiosa) da fare, è impostare delle chiavi SSH per poter lavorare su GitHub, dato che il login tramite username & password, potrebbe essere disabilitato tra un po', o comunque non consigliato.
+
+Per farlo, magari, seguiamo la guida aggiornata su GitHub.
