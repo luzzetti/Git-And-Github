@@ -12,5 +12,4 @@ b.  Aggiungere il repo remoto al git locale (Vedi paragrafo 22):
 
 c.  Ci manca solo di pushare le nostre modifiche anche sul repository remoto:
     git push <remote> <branch>
-
-    git push origin main        (Ricordiamoci che il master è stato rinominato con Main)
+    git push origin master        
