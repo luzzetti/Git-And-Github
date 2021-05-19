@@ -1,5 +1,0 @@
-git checkout <branchName> 
-
-farà la stessa identica cosa del git switch. Ci sposterà sul branch.
-Ma era un vecchio comando che è stato deprecato.
-
