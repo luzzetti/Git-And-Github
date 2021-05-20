@@ -1,0 +1,35 @@
+ok, vediamo di dipanare la matassa, e capire la differenza tra git fetch e git pull.
+
+
+WORKSPACE --- git add ---> STAGING --- git commit --->  LOCAL REPO --- git push --> REMOTE REPO (Github)
+
+                                                        LOCAL REPO <-- git fetch --- REMOTE REPO (Github)
+                                                        
+WORKSPACE <---------------------------------------- git pull ------------------------ REMOTE REPO (Github)
+
+
+Quindi, il git fetch, scarica le modifiche fatte (da qualcun altro), dal repo remoto, al repo locale.
+"Please go and get the latest information from GitHub, but don't screw up my working directory"
+
+git fetch <remote>
+
+git fetch origin
+
+
+In locale sto così:
+A - A - U(ncommitted)
+
+Ora, su github (repo remoto), qualcuno ha committato tre modifiche.
+
+A - A - C - C - C
+
+Con il git fetch, posso scaricare le modifiche, senza imputtanare la mia working copy, quindi:
+
+        C - C - C   <--(origin/master)
+      / 
+A - A - U   <-- (master)
+
+
+ed'ora posso tranquillamente switchare tra i due branch.
+(Se sono offline, ho comunque tutte le modifiche sul mio PC)
+
