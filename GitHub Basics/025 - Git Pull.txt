@@ -1,0 +1,21 @@
+WORKSPACE --- git add ---> STAGING --- git commit --->  LOCAL REPO --- git push --> REMOTE REPO (Github)
+
+                                                        LOCAL REPO <-- git fetch --- REMOTE REPO (Github)
+                                                        
+WORKSPACE <---------------------------------------- git pull ------------------------ REMOTE REPO (Github)
+
+
+Git pull, oltre a scaricare le modifiche, le INTEGRA con la nostra working directory.
+Possiamo immaginarcelo così:
+git fetch + git merge = git pull
+
+La sintassi è la solita:
+git pull <remote> <branch>
+
+Una cosa importante, è che i cambi verranno integrati con IL BRANCH SU CUI MI TROVO!!!
+
+git pull origin master
+prende le commit che sono state effettuate sul master remoto, e LE INTEGRA CON IL BRANCH SU CUI MI TROVO QUANDO INVIO IL COMANDO!
+FARE ATTENZIONE!!!
+
+
