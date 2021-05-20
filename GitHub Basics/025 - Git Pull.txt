@@ -35,4 +35,13 @@ A - A - U(ncommitted)
 
 git pull origin master (con conflitti)
 
+$ git pull origin master
+From https://github.com/luzzetti/Git-And-Github
+ * branch            master     -> FETCH_HEAD
+Auto-merging GitHub Basics/025 - Git Pull.txt
+CONFLICT (content): Merge conflict in GitHub Basics/025 - Git Pull.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+Ora, risolvo i conflicts come al solito alla vecchia maniera, e genererò una merge commit.
+
 A - A - C - C - C - MC  
