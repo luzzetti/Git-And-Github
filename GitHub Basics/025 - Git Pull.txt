@@ -45,3 +45,11 @@ Automatic merge failed; fix conflicts and then commit the result.
 Ora, risolvo i conflicts come al solito alla vecchia maniera, e genererò una merge commit.
 
 A - A - C - C - C - MC  
+
+
+Così come il git push [origin master]
+posso eseguire il comando abbreviato: git pull
+
+git pull (defaulta ad origin) (defaulta alla tracking connection, quindi al branch remoto che si chiama UGUALE al nostro branch locale)
+
+Molto importante.
