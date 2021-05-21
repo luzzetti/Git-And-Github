@@ -1,0 +1,11 @@
+# Github Gists #
+
+è una possibilità che ci viene data da GitHub, per scambiare brevi "code-snippets", ossia pezzi di codice, che possono anche appartenere ad un particolare repository. (Se non erro)
+
+(Una specie di Pastebin per il codice)
+
+Quindi, sono comodi se voglio inviare rapidamente un pezzo di codice, o se voglio salvarmelo da parte per un uso futuro.
+(Mi pare che sia anche versionabile).
+
+Quindi, insomma, non è una funzione fondamentale, ma in alcuni casi può risultare comoda.
+E soprattutto, è gratis, quindi...
