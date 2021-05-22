@@ -5,7 +5,6 @@
 
 La comunità è divisa, in quanto git rebase è usata come "alternativa" al git merge, e come strumento di cleanup.
 
-## PRIMO UTILIZZO -> Alternativa al Git Merge ##
 
 Mettiamo che mi trovo su un branch che sta andando per le lunghe, ed intanto altri colleghi committano sul Master.
 Ogni tanto, voglio "sincronizzarmi" con quelle ocmmit, e posso farlo, mergiando il master NEL MIO BRANCH,
