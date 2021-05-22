@@ -32,3 +32,11 @@ Ed il risultato sarebbero le mie commit, accodate (senza le merge-commit a sporc
            \./     \./
 A - A - A - A - C - C
 
+
+
+# VERY VERY ATTENZIONE! #
+# BIG NO NO! #
+
+Dato che il rebase, effettivamente, riscrive la storia:
+MAI effettuare il rebase delle commit che sono gia state condivise con gli altri (Push, fondamentalmente)!
+Perché poi diventa un bordello effettuare il reconcile dei due lavori.
