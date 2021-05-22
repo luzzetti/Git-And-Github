@@ -1,0 +1,35 @@
+# Git Rebasing #
+
+"It can really fuck things up"
+"It's not for beginners"
+
+La comunità è divisa, in quanto git rebase è usata come "alternativa" al git merge, e come strumento di cleanup.
+
+## PRIMO UTILIZZO -> Alternativa al Git Merge ##
+
+Mettiamo che mi trovo su un branch che sta andando per le lunghe, ed intanto altri colleghi committano sul Master.
+Ogni tanto, voglio "sincronizzarmi" con quelle ocmmit, e posso farlo, mergiando il master NEL MIO BRANCH,
+
+A - A - - A - - A       <--(Master)
+      \     \     \
+       C -C- C -C- C    <--(Feature)
+
+(Questo, mi genera una fracca di Merge-Commits sul mio branch, che non dicono niente di particolare, messaggi inutili, ma che comunque sono obbligato a mettere.)
+
+Quindi, quando finalmente mergerò il mio branch NEL MASTER, mi ritroverò con tutta la fracca di merge-commit messages inutili, che andranno a flooddare la log history.
+
+A questo proposito, può venirci in aiuto il REBASING.
+
+Il rebasing, effettivamente, riscrive la storia. Prende le nostre commit, e gli crea una nuova base (Ossia l'ultima commit effettuata sul master), poi ci aggiunge dietro tutte le commit del nostro branch.
+
+Quindi, se mi trovo nella situazione dipinta nel grafo di sopra, potrei effettuare:
+git switch Feature      (Per passare al branch feature)
+git rebase master       (Per effettuare un rebase del branch in cui mi trovo, basandomi sul master)
+
+Ed il risultato sarebbero le mie commit, accodate (senza le merge-commit a sporcare la history).
+
+      (Master)    (Feature)
+            |       |
+           \./     \./
+A - A - A - A - C - C
+
