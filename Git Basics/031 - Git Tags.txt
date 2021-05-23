@@ -116,3 +116,41 @@ Quindi, devo avere la possibilità di prendere un tag, e spostarlo su un'altra c
 Posso farlo, usando il flag -f
 git tag <nomeTagDaSpostare> <hashDellaCommitDaTaggare> -f
 
+$ git tag 1.0.1 fba43ff -f
+Updated tag '1.0.1' (was 44926e0)
+
+
+## Eliminare un tag ##
+Infine, potremmo ovviamente aver bisogno di eliminare un tag (a seguito di un errore).
+
+Possiamo farlo, con il flag -d per Delete.
+
+$ git tag -d 1.0.2
+Deleted tag '1.0.2' (was fba43ff)
+
+Easy peasy lemon squeezy.
+
+
+## Ultima info IMPORTANTE ##
+Di default, quando effettuo il push su un repository, I TAG NON VENGONO PUSHATI.
+
+Per farglielo fare, ho due opzioni.
+- Pushare solamente uno specifico tag
+- Pushare tutti i tag che ho fatto in locale
+
+I comandi sono, relativamente:
+git push <nomeRemote> <nomeDelTagDaPushare>
+
+$ git push origin 1.0.0
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/luzzetti/Git-And-Github.git
+ * [new tag]         1.0.0 -> 1.0.0
+
+
+Oppure, per pusharli tutti:
+git push <nomeRemote> --tags 
+
+$ git push origin --tags
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/luzzetti/Git-And-Github.git
+ * [new tag]         1.0.1 -> 1.0.1
