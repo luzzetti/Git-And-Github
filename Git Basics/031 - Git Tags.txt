@@ -1,0 +1,59 @@
+# GIT TAGS #
+
+Solitamente, usiamo i tag per identificare le differenti release di un progetto.
+(Semantic Versioning)
+
+Ma fondamentalmente, possiamo usarli per identificare dei momaneit particolarmente importanti nella storia di un progetto, e delle sue commit.
+
+In pratica, è come aggiungere una Sticky-Note ad una particolare commit.
+
+Abbiamo fondamentalmente due tipi di tags:
+- Lightweight       (Semplici tag)
+- Annotated Tags    (Tag con metadata aggiuntiva, come commenti, data, ecc...)
+
+
+### DIGRESSIONE sul Semantic Versioning ###
+
+Solitamente, gli si danno tre numeri nel formato:
+X.Y.Z
+Major.Minor.Patch
+
+La release iniziale, è solitamente la 1.0.0
+
+Patch -> Non contengono nuove feature o breaking changes. Solitamente sono riservate alle Path/HotFix/BugFix
+Minor -> New features, nuove funzionalità, ma VIENE MANTENUTA LA RETROCOMPATIBILITA'.
+        (Idealmente, non obblighi chi le usa a riscrivere il codice)
+        Una volta aumentato il numero della minor, si tende a RESETTARE il Patch number.
+Major -> Significant changes, breaking changes, retrocompatibilità non mantenuta
+
+*Fine Digressione*
+
+## Search & Filter ##
+
+Il comando:
+git tag
+ci mostra la lista dei tags effettuati sul repo in cui ci troviamo
+
+possiamo filtrare alcuni tag con le classiche regex, con il comando:
+git tag -l "*beta*"
+
+
+## Spostarci su un TAG ##
+Teniamo bene a mente che i tag, nella maggior parte dei casi, si riferiscono a delle specifiche commit passate, di conseguenza, sponsandoci su un TAG, ci ritroveremo in DETACHED HEAD.
+
+git checkout <TagName>
+
+Trovandoci in detached head, possiamo fare le solite cose. Guardare, fare qualche modifica e creare un branch, diffare tra due tag, e così via.
+
+## Creare Tags ##
+
+Ok, ricordiamoci che ci sono due tipi di tag, come detto gia in precedenza.
+- Lightweight
+- Annotated
+
+*Lightweight*
+git tag <nomeDelTag>
+
+Con questo comando, git creerà un tag che si riferisce alla commit che STA VENENDO ATTUALMENTE PUNTATA DALL'HEAD del branch su cui ci troviamo.
+
+
