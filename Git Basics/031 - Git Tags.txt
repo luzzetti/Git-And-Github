@@ -57,3 +57,6 @@ git tag <nomeDelTag>
 Con questo comando, git creerà un tag che si riferisce alla commit che STA VENENDO ATTUALMENTE PUNTATA DALL'HEAD del branch su cui ci troviamo.
 
 
+*Annotated*
+Per creare dei tag annotati, dobbiamo aggiungere il flag -a 
+git tag -a 1.0.1 
