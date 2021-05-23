@@ -154,3 +154,6 @@ $ git push origin --tags
 Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/luzzetti/Git-And-Github.git
  * [new tag]         1.0.1 -> 1.0.1
+
+
+ (Attenzione, perché sembra pushare SOLAMENTE i tag, e non le modifiche al codice)
