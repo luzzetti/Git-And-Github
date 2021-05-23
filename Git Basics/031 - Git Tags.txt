@@ -100,4 +100,19 @@ index ac87dbe..c511598 100644
 
  Perfetto!
 
- 
+
+ Un'ultima informazione importante, è la possibilità di andare a taggare una vecchia commit!
+Posso farlo sempre con il solito comando:
+
+git tag <nomeDelTag> <hashDellaCommitDaTaggare>
+(Posso fare un tag Annotato o Lightweight, usando o meno il tag -a)
+
+
+## Spostare un tag ##
+Se per qualche motivo ci sbagliamo e tagghiamo la commit sbagliata, vogliamo poter taggare la commit corretta, ma GIT si incazza se usiamo lo stesso nome per due tag.
+
+Quindi, devo avere la possibilità di prendere un tag, e spostarlo su un'altra commit.
+
+Posso farlo, usando il flag -f
+git tag <nomeTagDaSpostare> <hashDellaCommitDaTaggare> -f
+
